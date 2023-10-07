@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Usuario} from './shared/modelo/usuario';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'projeto';
+  title = 'primeiro-angular-alunos';
+
+
 }
