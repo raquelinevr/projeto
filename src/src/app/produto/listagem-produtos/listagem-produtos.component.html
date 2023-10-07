@@ -1,0 +1,22 @@
+<div>
+  </div>
+  <div fxLayout="row wrap" fxLayout.lt-sm="column">
+    <mat-card fxFlex="20" class="card-usuario" *ngFor="let produto of produtos">
+      <mat-card-header>
+        <mat-card-title>{{produto.nome}}</mat-card-title>
+        <mat-card-subtitle >Código de barras: {{produto.barCode}}</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        Valor: {{produto.preco}}
+      </mat-card-content>
+      <mat-card-actions>
+        <!-- <button mat-button [routerLink]="['/mantem', produto.barCode]">
+          <mat-icon>edit</mat-icon>
+        </button> -->
+        <button mat-button (click)="excluir(produto)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
